@@ -2,17 +2,53 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Iframes</title>
-  <style>
-    body {
-      background: skyblue;
-    }
-  </style>
+  <title>Forms</title>
 </head>
 <body>
-  <iframe src="name.html" frameborder="0" height="500" width="1000" scrolling="yes" name="frame">
-  </iframe>
-  <a href="100.png" target="frame">Изображение</a>
-  <a href="name.html" target="frame">Назад</a>
+  <form method="POST">
+    <input type="text" name="myName" placeholder="Введите ваше имя: " list="namelist">
+      <datalist id="namelist">
+        <option value="Александра">
+        <option value="Мансара">
+        <option value="Орлеан">
+      </datalist><br>
+    <br><fieldset>
+      <legend>Form example</legend>
+      <input type="text"><br>
+      <input type="submit"><br>
+    </fieldset><br>
+    <br>
+    <textarea name="text" rows="5" cols="10" wrap="hard">
+    </textarea><br>
+    <button type="submit">Submit</button><br>
+    <button type="button">Button</button><br>
+    <button type="reset">Reset</button><br>
+    <br>
+    <br>Текстовое поле: <input type="text" placeholder="Your name" name="name1" tabindex="1"><br>
+    <br>Поле-пароль: <input type="password" name="name2" tabindex="2"><br>
+    <br>Поле для e-mail: <input type="email" name="name3" tabindex="4"><br>
+    <br>Поле для URL: <input type="url" name="name4" tabindex="3"><br>
+    <br>Поле для поиска: <input type="search" name="name5"><br>
+    <br>Поле для телефона: <input type="tel"><br>
+    <br>Чекбокс: <input type="checkbox" checked><br>
+    <br>Чекбокс2: <input type="checkbox" required><br>
+    <br>Цвет: <input type="color"><br>
+    <br>Файл аудио разных видов: <input type="file" multiple accept="audio/*"><br>
+    <br>Файл определенных типов: <input type="file" multiple accept="image/jpg, image/png"><br>
+    <br>Спрятанное поле: <input type="hidden"><br>
+    <br>Числовое поле: <input type="number"><br>
+    <br>Радио-кнопка: <input type="radio"><br>
+    <br>Ввод даты без времени: <input type="date"><br>
+    <br>Ввод даты со временем: <input type="datetime"><br>
+    <br>Поле-диапазон: <input type="range" min="0" max="200" step="50"><br>
+    <br>Контроль ввода даты: <input type="datetime-local"><br>
+    <br>Ввод месяца: <input type="month"><br>
+    <br>Ввод времени: <input type="time"><br>
+    <br>Ввод недели: <input type="week"><br>
+    <br>Графическая кнопка без поведения: <input type="button"><br>
+    <br>Кнопка очистки: <input type="reset"><br>
+    <br>Графическая кнопка: <input type="image" src="100.png" height="20" width="20"><br>
+    <br>Кнопка отправки: <input type="submit"><br>
+</form>
 </body>
 </html>
