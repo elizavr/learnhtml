@@ -1,0 +1,15 @@
+p {
+  background: lightpink;
+  }
+h1 {
+  background: lightcyan;
+  }
+#block {
+  background: yellow;
+  }
+.text {
+  background: lightcyan;
+}
+#block2 .text2 {
+  background: lightgoldenrodyellow;
+}
