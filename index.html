@@ -2,36 +2,13 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Семантика</title>
+  <title>Работа с video в HTML</title>
 </head>
 <body>
-  <header></header>
-  <nav></nav>
-  <aside></aside>
-  <main role="main">
-    <menu type="toolbar">
-      <li>
-        <menu label="Типография">
-          <button>B</button>
-          <button>I</button>
-          <button>U</button>
-        </menu>
-      </li>
-      <li>
-          <menu label="Таблицы">
-              <button>Tr</button>
-              <button>Td</button>
-              <button>Th</button>
-          </menu>
-      </li>
-    </menu>
-
-
-    <article>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere a voluptates alias tempore totam illo praesentium incidunt tenetur, odio eos, magni repudiandae quaerat <mark>aliquam officia</mark> sequi, ad magnam recusandae. Alias? <time datetime="1998-10-16 00:15">16 октября</time>
-      <blockquote cite="http://google.com">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore laborum, voluptate repellendus ullam, tempora temporibus nisi cum obcaecati, dolorem officia voluptates minima velit? Consequatur aliquid pariatur incidunt repudiandae, commodi placeat.</blockquote>
-    </article>
-  </main>
-  <footer></footer>
+  <video src="video.mp4#t=3,8" controls loop preload="none" height="200" width="300" poster="IMG_2304.jpg" muted></video> <br>
+  <video height="200" width="300" poster="IMG_2304.jpg" controls>
+        <source src="Lunch Break.ogv" type='video/ogv; codecs="theora, vorbis"'></source>
+        <source src="video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
+  </video>
 </body>
 </html>
